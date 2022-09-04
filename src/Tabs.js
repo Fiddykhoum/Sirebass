@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Tabs.css';
 import ESC from './esc.jpg';
+import RedSquare from './RedSquare';
+import BlueSquare from './BlueSquare';
 
 const Tabs = () => {
   const [tabs, setTabs] = useState([
@@ -66,9 +68,12 @@ const Tabs = () => {
   };
 
   return (
-    
     <div className="Wrapper">
+      <div className="Titrelie">
+      <RedSquare />
       <h1>Sire bass</h1>
+      <BlueSquare />
+      </div>
       <ul className="Tabs">
         {tabs.map((tab) => {
           return (
